@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>漢字練習</title>
+
+<style>
+
+body{
+    font-family:sans-serif;
+    background:#f5f5f5;
+    margin:0;
+    padding:15px;
+}
+
+h1{
+    text-align:center;
+}
+
+.quiz{
+    background:white;
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:10px;
+}
+
+.question{
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.choice{
+    margin:6px 0;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:none;
+    border-radius:8px;
+    background:#4CAF50;
+    color:white;
+    font-size:16px;
+}
+
+.answer{
+    display:none;
+    margin-top:10px;
+    background:#fff9c4;
+    padding:10px;
+    border-radius:8px;
+}
+
+</style>
+
+<script>
+function showAnswer(id){
+
+let answer = document.getElementById(id);
+
+if(answer.style.display==="block"){
+    answer.style.display="none";
+}else{
+    answer.style.display="block";
+}
+
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>漢字練習</h1>
+
+<div class="quiz">
+<div class="question">Q1. 水の仲間ではない漢字はどれ？</div>
+<div class="choice">① 海</div>
+<div class="choice">② 湖</div>
+<div class="choice">③ 泳</div>
+<div class="choice">④ 話</div>
+
+<button onclick="showAnswer('a1')">答えを見る</button>
+
+<div class="answer" id="a1">
+正解：④ 話<br><br>
+海・湖・泳には「氵（さんずい）」があります。
+</div>
+</div>
+
+<div class="quiz">
+<div class="question">Q2. 木が一番多いのはどれ？</div>
+<div class="choice">① 木</div>
+<div class="choice">② 林</div>
+<div class="choice">③ 森</div>
+<div class="choice">④ 本</div>
+
+<button onclick="showAnswer('a2')">答えを見る</button>
+
+<div class="answer" id="a2">
+正解：③ 森<br><br>
+木1本＝木<br>
+木2本＝林<br>
+木3本＝森
+</div>
+</div>
+
+<div class="quiz">
+<div class="question">Q3. 言葉の仲間はどれ？</div>
+<div class="choice">① 語</div>
+<div class="choice">② 海</div>
+<div class="choice">③ 森</div>
+<div class="choice">④ 駅</div>
+
+<button onclick="showAnswer('a3')">答えを見る</button>
+
+<div class="answer" id="a3">
+正解：① 語<br><br>
+「言」がある漢字は言葉に関係することが多いです。
+</div>
+</div>
+
+<div class="quiz">
+<div class="question">Q4. 「休」はなぜ休むという意味？</div>
+<div class="choice">① 人がお金を持つ</div>
+<div class="choice">② 人が木の下にいる</div>
+<div class="choice">③ 人が勉強する</div>
+<div class="choice">④ 人が走る</div>
+
+<button onclick="showAnswer('a4')">答えを見る</button>
+
+<div class="answer" id="a4">
+正解：② 人が木の下にいる
+</div>
+</div>
+
+<div class="quiz">
+<div class="question">Q5. 人に関係する部首はどれ？</div>
+<div class="choice">① 氵</div>
+<div class="choice">② 言</div>
+<div class="choice">③ 亻</div>
+<div class="choice">④ 木</div>
+
+<button onclick="showAnswer('a5')">答えを見る</button>
+
+<div class="answer" id="a5">
+正解：③ 亻
+</div>
+</div>
+
+<div class="quiz">
+<div class="question">Q6. 「明」が明るい理由は？</div>
+<div class="choice">① 火＋木</div>
+<div class="choice">② 日＋月</div>
+<div class="choice">③ 人＋口</div>
+<div class="choice">④ 山＋川</div>
+
+<button onclick="showAnswer('a6')">答えを見る</button>
+
+<div class="answer" id="a6">
+正解：② 日＋月
+</div>
+</div>
+
+<div class="quiz">
+<div class="question">Q7. 「晴」「情」「清」の共通点は？</div>
+<div class="choice">① 左側が同じ</div>
+<div class="choice">② 右側が同じ</div>
+<div class="choice">③ 全部食べ物</div>
+<div class="choice">④ 全部動物</div>
+
+<button onclick="showAnswer('a7')">答えを見る</button>
+
+<div class="answer" id="a7">
+正解：② 右側が同じ
+</div>
+</div>
+
+<div class="quiz">
+<div class="question">Q8. 食べることに関係する漢字はどれ？</div>
+<div class="choice">① 飯</div>
+<div class="choice">② 森</div>
+<div class="choice">③ 住</div>
+<div class="choice">④ 洋</div>
+
+<button onclick="showAnswer('a8')">答えを見る</button>
+
+<div class="answer" id="a8">
+正解：① 飯
+</div>
+</div>
+
+<div class="quiz">
+<div class="question">Q9. 昔の交通を表している部品はどれ？</div>
+<div class="choice">① 馬</div>
+<div class="choice">② 木</div>
+<div class="choice">③ 竹</div>
+<div class="choice">④ 糸</div>
+
+<button onclick="showAnswer('a9')">答えを見る</button>
+
+<div class="answer" id="a9">
+正解：① 馬
+</div>
+</div>
+
+<div class="quiz">
+<div class="question">Q10. 「信」はなぜ信じるという意味？</div>
+<div class="choice">① 人＋言</div>
+<div class="choice">② 人＋木</div>
+<div class="choice">③ 口＋木</div>
+<div class="choice">④ 心＋木</div>
+
+<button onclick="showAnswer('a10')">答えを見る</button>
+
+<div class="answer" id="a10">
+正解：① 人＋言
+</div>
+</div>
+
+</body>
+</html>
